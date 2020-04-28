@@ -1,0 +1,55 @@
+<!-- Cabecera -->
+<ion-header class="ion-no-border">
+  <!-- Toolbar -->
+  <ion-toolbar>
+    <!-- Botones al principio del toolbar => regresar-->
+    <ion-buttons slot="start">
+      <ion-back-button text="Regresar" defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <!-- Título del toolbar -->
+    <ion-title>botones</ion-title>
+    <!-- Botones al final del toolbar -->
+    <ion-buttons slot="end">
+      <ion-button color="primary">
+        <ion-icon name="star"></ion-icon>
+      </ion-button>
+      <ion-button color="primary">
+        <ion-icon name="heart"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<!-- Contenido -->
+<ion-content>
+  <!-- Botones normales -->
+  <ion-button size="small" expand="full">Small</ion-button>
+  <ion-button size="default" expand="full">Default</ion-button>
+  <ion-button size="large" expand="full">Large</ion-button>
+  <!-- Para navegar -->
+  <ion-button class="top-20" expand="full" color="dark" routerLink="/alert"
+    >Ir a Alerta</ion-button
+  >
+  <!-- ion row + ion col -->
+  <ion-row class="top-20">
+    <ion-col>
+      <ion-button expand="full" color="dark" routerLink="/avatar"
+        >Ir a avatar</ion-button
+      >
+    </ion-col>
+    <ion-col>
+      <ion-button expand="full" color="dark" routerLink="/action-sheet"
+        >Ir a action-sheet</ion-button
+      >
+    </ion-col>
+  </ion-row>
+  <!-- Fill => llenado || determines the background and border color of the button -->
+  <ion-button class="top-20" fill="clear">
+    Clear
+  </ion-button>
+  <ion-button class="top-20" fill="outline">
+    Outline
+  </ion-button>
+  <ion-button class="top-20" fill="solid">
+    Solid
+  </ion-button>
+</ion-content>
